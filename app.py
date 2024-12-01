@@ -1,3 +1,7 @@
+import matplotlib as mpl
+if os.name == 'posix':  # Linux 환경
+    mpl.use('Agg')
+
 import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
